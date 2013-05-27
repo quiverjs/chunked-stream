@@ -6,7 +6,7 @@
   },
   "name": "quiver-chunked-stream",
   "desription": "Convert between chunk encoded stream and decoded stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/quiverjs/chunked-stream",
   "repository": {
     "url": "git@github.com:quiverjs/chunked-stream.git"
@@ -14,8 +14,8 @@
   "dependencies": {
     "quiver-error": ">=0.0.2",
     "quiver-stream-channel": ">=0.0.10",
-    "quiver-stream-pushback": ">=0.0.3",
-    "quiver-stream-head-extractor": ">=0.0.1"
+    "quiver-stream-pushback": ">=0.0.4",
+    "quiver-stream-head-extractor": ">=0.0.2"
   },
   "devDependencies": {
     "quiver-stream-convert": ">=0.0.6",
