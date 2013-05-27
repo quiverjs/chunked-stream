@@ -1,0 +1,37 @@
+{
+  "author": {
+    "name": "Soares Chen",
+    "email": "soares.chen@gmail.com",
+    "url": "http://soareschen.com"
+  },
+  "name": "quiver-chunked-stream",
+  "desription": "Convert between chunk encoded stream and decoded stream",
+  "version": "0.0.1",
+  "homepage": "https://github.com/quiverjs/chunked-stream",
+  "repository": {
+    "url": "git@github.com:quiverjs/chunked-stream.git"
+  },
+  "dependencies": {
+    "quiver-error": ">=0.0.2",
+    "quiver-stream-channel": ">=0.0.10",
+    "quiver-stream-pushback": ">=0.0.3",
+    "quiver-stream-head-extractor": ">=0.0.1"
+  },
+  "devDependencies": {
+    "quiver-stream-convert": ">=0.0.6",
+    "mocha": ">=1.8.1",
+    "should": ">=1.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/quiverjs/chunked-stream/issues",
+    "email": "quiverjs@soareschen.com"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/quiverjs/license/master/LICENSE"
+  },
+  "main": "./lib/chunked-stream",
+  "scripts": {
+    "test": "make test"
+  }
+}
