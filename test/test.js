@@ -75,4 +75,29 @@ describe('chunked stream test', function() {
       callback()
     })
   })
+
+  it('combined chunk unchunk test', function(callback) {
+    var unicodeBuffer = new Buffer('世界你好')
+
+    var testBuffers = [
+      'first ',
+      'second ',
+      unicodeBuffer.slice(0, 5),
+      unicodeBuffer.slice(5, 12),
+      ' third ',
+      'fourth ',
+      'fifth'
+    ]
+
+    var originalStream = streamConvert.buffersToStream(testBuffers)
+    var chunkedStream = streamChunk.streamToChunkedStream(originalStream)
+    var unchunkedStream = streamChunk.chunkedStreamToStream(chunkedStream)
+
+    streamConvert.streamToText(unchunkedStream, function(err, text) {
+      if(err) throw err
+
+      text.should.equal('first second 世界你好 third fourth fifth')
+      callback()
+    })
+  })
 })
